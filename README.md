@@ -80,6 +80,18 @@ proot-distro login ubuntu -- bash -lc 'npm i -g @opencode/cli@latest @openchambe
 
 راجع [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md).
 
+## الحالة (اتجرّب إيه فعليًا)
+
+اتجرّب على تليفون Android 12 / arm64 (Redmi)، جوه Ubuntu 24.04 proot:
+
+- ✅ Node.js 24.22.2 + `@openchamber/web` 2.5.3 + `@opencode/cli` 2.2.0
+- ✅ `node-pty` (prebuilt linux-arm64) شغال، والواجهة بترد `200`
+- ✅ OpenChamber بيشغّل OpenCode لوحده وبيوصل له
+
+⚠️ أوامر Termux نفسها (`pkg`, `proot-distro`) مكتوبة حسب توثيق proot-distro
+الرسمي، لكن مااتنفذتش في بيئة الاختبار (الاختبار كان جوه Ubuntu مباشرة).
+لو حصلت مشكلة في `install.sh` افتح Issue.
+
 ## English quickstart
 
 ```bash
